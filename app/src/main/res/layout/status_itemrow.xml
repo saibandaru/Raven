@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="40dp" android:background="@drawable/border_chatlist"
+    android:layout_width="fill_parent" android:layout_marginLeft="2dp"
+    android:layout_marginRight="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/status_row"
+        android:layout_marginLeft="12dp"
+        android:textSize="16dp"
+        android:textColor="#000" android:gravity="left"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+

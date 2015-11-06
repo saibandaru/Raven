@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_pressed="false" android:background="#fff4ee1d" />
+    <item android:state_focused="true" android:state_pressed="true" android:background="#ff20f4f2" />
+    <item android:state_focused="false" android:state_pressed="true" android:background="#ff462af4" />
+    <item android:background="#fff076f4" />
+</selector>

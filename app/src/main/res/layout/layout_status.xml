@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_weight="1" android:background="@drawable/rounded_corner"
+            android:layout_height="0dp" android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent" android:layout_weight="1" android:text="Your Current Status"
+                android:textColor="#F44336" android:id="@+id/status"
+                android:textSize="16dp" android:background="@drawable/border_chatlist"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp" android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp" />
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_weight="1" android:orientation="horizontal"
+                android:layout_below="@+id/status" android:layout_alignEnd="@+id/status"
+                android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="0dp"
+                android:hint="Status here" android:textColor="#000"
+                android:textSize="16dp" android:id="@+id/status_edit"
+                android:layout_height="40dp" android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                 android:layout_weight="10"
+                android:scrollHorizontally="true"
+                />
+            <ImageView
+                android:layout_width="0dp" android:id="@+id/save_status"
+                android:src="@drawable/save_icon" android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_weight="5" android:background="@drawable/rounded_corner" android:layout_marginBottom="10dp"
+            android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent" android:layout_weight="1" android:text="Select New Status" android:textColor="#F44336"
+                android:textSize="16dp" android:layout_marginLeft="2dp" android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/border_chatlist" android:id="@+id/select_new"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView android:id="@+id/recycler_status"
+                android:layout_height="fill_parent"  android:layout_weight="8"  android:layout_below="@+id/select_new"
+                android:layout_alignEnd="@+id/select_new" android:layout_margin="10dp"
+                android:layout_width="fill_parent"/>
+        </RelativeLayout>
+
+    </LinearLayout>
